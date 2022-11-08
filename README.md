@@ -48,7 +48,7 @@ Lembre-se de instalar o `axios`, e importá-lo quando for necessário.
  Para finalizar, precisamos criar uma função para remover as músicas de uma playlist (note que já temos um botão no layout para isso, marcado com `x` ao lado de cada música)
 
 ## Informações úteis sobre o assunto
-[Axios (documentação)](https://axios-http.com/docs/intro)
-[Promise (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-[Usando Promises (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Using_promises)
+1. [Axios (documentação)](https://axios-http.com/docs/intro)
+2. [Promise (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+3. [Usando Promises (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Using_promises)
 
