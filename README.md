@@ -14,7 +14,7 @@ Vamos utilizar a API do Labefy, vista na aula anterior para fazer os exercícios
 
 Para executar este exercício, você pode criar uma nova aplicação React, como foi visto na aula passada, ou utilizar o link abaixo para ir ao template no **CodeSandbox**. Este template para exatamente onde o exercício da última aula acaba.
 
-[**Template do CodeSandbox**](https://codesandbox.io/s/integracao-api-i-exercicio-gexiie)
+[**Template do CodeSandbox**](https://codesandbox.io/s/integracao-api-i-exercicio-mrol7v)
 
 Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste repositório e colar dentro da pasta do seu projeto criado.
 
