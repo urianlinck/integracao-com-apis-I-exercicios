@@ -51,8 +51,21 @@ export default function Musicas(props) {
 
     useEffect(()=>{
         pegarMusicas()
-    }, [musicas, musica])
-
+    }, [])
+    const AUTH_TOKEN = 'urian-linck-faruqi'
+    const deletarPlaylist = async () => {
+        try{
+           const resposta = await axios.delete(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${props.playlist.id}`, {headers: {
+            Authorization: AUTH_TOKEN
+           }})
+           
+           console.log(resposta)
+        }catch(error){
+            console.log(error)
+        }finally{
+            props.pegarPlaylist()
+        }
+    }
     return (
         <ContainerMusicas>
             <h2>{props.playlist.name}</h2>
@@ -62,7 +75,8 @@ export default function Musicas(props) {
                         <h3>{musica.name} - {musica.artist}</h3>
                         <audio src={musica.url} controls />
                         <button onClick={()=>{removerMusica(musica)}}>X</button>
-                    </Musica>)
+                    </Musica>
+                    )
             })}
             <ContainerInputs>
                 <InputMusica onChange={(e)=>{setArtista(e.target.value)}} value={artista} placeholder="artista" />
@@ -70,6 +84,7 @@ export default function Musicas(props) {
                 <InputMusica onChange={(e)=>{setUrl(e.target.value)}} value={url} placeholder="url" />
                 <Botao onClick={adicionarMusica}>Adicionar musica</Botao>
             </ContainerInputs>
+            <button onClick={deletarPlaylist}>X</button>
         </ContainerMusicas>
     )
 }
